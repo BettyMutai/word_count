@@ -3,6 +3,9 @@ require('rspec')
 
   describe('word_count')do
     it("should count how many times a word appears") do
-      expect("peck".word_count("If Peter Piper picked a peck of pickled peppers, where’s the peck of pickled peppers Peter Piper picked?")).to(eq(2))
+      expect("bee bee bee".word_count("bee")).to(eq(3))
+    end
+    it("should account for case sensitivity and punctuation when counting") do
+      expect("Hello!!??".word_count("hello")).to(eq(0))
     end
   end
