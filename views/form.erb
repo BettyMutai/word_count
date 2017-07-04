@@ -1,15 +1,20 @@
-  <h1>Word Count</h1>
-  <h5>This is a website that uses a method to return how frequently a word appears in a given string</h5>
+<h1>Word Count</h1>
+<h5>This is a website that uses a method to return how frequently a word appears in a given string</h5>
+
 <form method="POST" action='/'>
+  <fieldset>
   <div class="form-group">
-  <label for="word">Your word</label>
-  <input id="word" name="word" class="form-control" type="text">
-</div>
-<div class="form-group">
-  <label for="sentence">Your sentence</label>
-  <input id="sentence" name="sentence" class="form-control" type="text">
-</div>
-<button type="submit" class="btn">Go!</button>
+    <label for="word">Your word</label>
+    <input id="word" name="word" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="sentence">Your sentence</label>
+    <input id="sentence" name="sentence" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Go!</button>
+</fieldset>
 </form>
 
-<h3 id="results">Output:<%= @totalcount %></h3>
+<div class="container">
+  <h3 id="results">Output:<%= @totalcount %></h3>
+</div>
